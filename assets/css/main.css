@@ -2657,6 +2657,9 @@
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
+		background: #1e1f23;
+		color: rgba(255, 255, 255, 0.25);
+
 	}
 
 		.spotlight > * {
@@ -2676,6 +2679,10 @@
 
 		.spotlight p:last-child {
 			margin: 0;
+		}
+
+		.spotlight h3 {
+			color: #FFF;
 		}
 
 		.spotlight .inner {

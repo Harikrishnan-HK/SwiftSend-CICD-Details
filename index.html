@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--
-	Caminar by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+
 <html>
   <head>
     <title>SwiftSend</title>
@@ -17,8 +13,8 @@
   </head>
   <style>
     .image img {
-      border: 4px solid #000000; /* Add a 2px solid black border */
-      border-radius: 0px; /* Optional: Add rounded corners */
+      border: 4px solid #000000;
+      border-radius: 0px;
     }
   </style>
   <body>
@@ -138,7 +134,12 @@
         <section id="three" class="wrapper">
           <div class="spotlight">
             <div class="image flush">
-              <img src="images/pic06.jpg" alt="" width="700" height="525" />
+              <img
+                src="images/logodisplay.png"
+                alt=""
+                width="700"
+                height="525"
+              />
             </div>
             <div class="inner">
               <h3>About SwiftSend App</h3>
@@ -151,20 +152,50 @@
           </div>
           <div class="spotlight alt">
             <div class="image flush">
-              <img src="images/cicdImg.png" alt="" width="700" height="525" />
+              <img
+                src="images/deploymentChallenges1.png"
+                alt=""
+                width="700"
+                height="525"
+              />
             </div>
             <div class="inner">
-              <h3>Curabitur Eget</h3>
+              <h3>Challenges Addressed</h3>
               <p>
-                Curabitur eget semper ante. Morbi eleifend ultricies est, a
-                blandit diam vehicula vel. Vestibulum porttitor nisi quis
-                viverra hendrerit. Suspendisse vel volutpat nibh, vel elementum
-                lacus. Maecenas commodo pulvinar dui, at cursus metus imperdiet
-                vel.
+                SwiftSend was facing significant operational challenges,
+                including manual, error-prone deployment processes, scalability
+                issues, limited monitoring capabilities, and security
+                vulnerabilities. These problems led to frequent downtime,
+                delayed releases, and an overall inefficiency in the development
+                lifecycle.
               </p>
             </div>
           </div>
           <div class="spotlight">
+            <div class="image flush">
+              <img
+                src="images/CI-CD-Pipeline.png"
+                alt=""
+                width="700"
+                height="525"
+              />
+            </div>
+            <div class="inner">
+              <h3>Our Solution</h3>
+              <p>
+                To overcome the challenges faced by SwiftSend, my team and I
+                implemented a robust CI/CD pipeline that automated and
+                streamlined the deployment processes. By incorporating
+                open-source DevOps tools like Jenkins, Terraform, Ansible,
+                SonarQube, Trivy, Docker, and Kubernetes, alongside AWS cloud
+                services, we developed a comprehensive solution. This
+                combination allowed us to automate code integration, testing,
+                security scanning, and deployment, ensuring a more efficient,
+                secure, and scalable infrastructure.
+              </p>
+            </div>
+          </div>
+          <div class="spotlight alt">
             <div class="image flush">
               <img
                 src="images/Architecture.png"
@@ -173,14 +204,112 @@
                 height="525"
               />
             </div>
-            <div class="inner">
-              <h3>Morbi Eleifend</h3>
+            <div
+              class="inner"
+              style="text-align: left; padding-top: 2rem; padding-bottom: 2rem"
+            >
+              <h3>Our Architecture</h3>
               <p>
-                Curabitur eget semper ante. Morbi eleifend ultricies est, a
-                blandit diam vehicula vel. Vestibulum porttitor nisi quis
-                viverra hendrerit. Suspendisse vel volutpat nibh, vel elementum
-                lacus. Maecenas commodo pulvinar dui, at cursus metus imperdiet
-                vel.
+                <li>
+                  Automated Deployment: Jenkins for continuous integration and
+                  ArgoCD for continuous deployment, minimizing manual tasks.
+                </li>
+                <li>
+                  Infrastructure as Code: Terraform for consistent, scalable AWS
+                  infrastructure provisioning.
+                </li>
+                <li>
+                  Configuration Management: Ansible for automating service
+                  configurations across deployments.
+                </li>
+                <li>
+                  Code Quality & Security: SonarQube and Trivy for ongoing code
+                  quality checks and security analysis.
+                </li>
+                <li>
+                  Containerization & Orchestration: Docker and Kubernetes for
+                  efficient application deployment and scaling.
+                </li>
+                <li>
+                  Monitoring & Visualization: Prometheus for monitoring and
+                  Grafana for performance visualization.
+                </li>
+              </p>
+            </div>
+          </div>
+          <div class="spotlight">
+            <div class="image flush">
+              <img
+                src="images/AwsServices.png"
+                alt=""
+                width="700"
+                height="525"
+              />
+            </div>
+            <div class="inner" style="padding-top: 2rem; padding-bottom: 2rem">
+              <h3>AWS Services Used</h3>
+              <p>
+                Our SwiftSend CI/CD pipeline utilized key AWS services to create
+                a robust and scalable infrastructure:
+                <li>
+                  EC2 Instance: Hosted the Ansible server and managed essential
+                  infrastructure components.
+                </li>
+                <li>
+                  Amazon RDS: Provided a managed relational database in the
+                  cloud for scalable data management.
+                </li>
+                <li>
+                  AWS EKS: Managed and scaled containerized applications using
+                  Kubernetes.
+                </li>
+                <li>
+                  Amazon EFS: Offered scalable, elastic file storage for
+                  persistent data.
+                </li>
+                <li>
+                  AWS S3 and DynamoDB: Used for storing Terraform state files
+                  and ensuring consistent state locking.
+                </li>
+                <li>
+                  Amazon ECR: Managed and deployed Docker container images
+                  efficiently.
+                </li>
+              </p>
+            </div>
+          </div>
+          <div class="spotlight alt">
+            <div class="image flush">
+              <img src="images/awsarc.png" alt="" width="700" height="525" />
+            </div>
+            <div class="inner">
+              <h3>AWS Architecture</h3>
+              <p>
+                SwiftSend was facing significant operational challenges,
+                including manual, error-prone deployment processes, scalability
+                issues, limited monitoring capabilities, and security
+                vulnerabilities. These problems led to frequent downtime,
+                delayed releases, and an overall inefficiency in the development
+                lifecycle.
+              </p>
+            </div>
+          </div>
+          <div class="spotlight">
+            <div class="image flush">
+              <img src="images/eksarc.png" alt="" width="700" height="525" />
+            </div>
+            <div class="inner">
+              <h3>Our Solution</h3>
+              <p>
+                To overcome the challenges faced by SwiftSend, my team and I
+                implemented a robust CI/CD pipeline that automated and
+                streamlined the deployment processes. By incorporating
+                open-source DevOps tools like Jenkins, Terraform, Ansible,
+                SonarQube, Trivy, Docker, and Kubernetes, alongside AWS cloud
+                services, we developed a comprehensive solution. This
+                combination allowed us to automate code integration, testing,
+                security scanning, and deployment, ensuring a more efficient,
+                secure, and scalable infrastructure.
               </p>
             </div>
           </div>
@@ -189,7 +318,7 @@
     </section>
     <!-- Footer -->
     <footer id="footer">
-      <div class="container">
+      <!-- <div class="container">
         <ul class="icons">
           <li>
             <a href="#" class="icon fa-twitter"
@@ -212,10 +341,13 @@
             >
           </li>
         </ul>
-      </div>
+      </div> -->
     </footer>
     <div class="copyright">
-      Site made with <a href="https://templated.co/">TEMPLATED.CO</a>
+      Site made by
+      <a href="https://harikrishnan-karuppiah.netlify.app/"
+        >Harikrishnan Karuppiah</a
+      >
     </div>
 
     <!-- Scripts -->
