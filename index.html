@@ -16,6 +16,9 @@
       border: 4px solid #000000;
       border-radius: 0px;
     }
+    #one .image img {
+      height: 700px;
+    }
   </style>
   <body>
     <!-- Header -->
@@ -32,12 +35,7 @@
         <!-- One -->
         <section id="one" class="wrapper style1">
           <div class="image fit flush">
-            <img
-              src="images/Architecture.png"
-              alt=""
-              width="1177"
-              height="443"
-            />
+            <img src="images/Architecture.png" alt="" width="1177" />
           </div>
           <header class="special">
             <h2>Automated CI/CD Pipeline for a Web App</h2>
@@ -73,61 +71,6 @@
               </li>
               <li>Monitoring and Visualization: Prometheus, Grafana</li>
             </p>
-          </div>
-        </section>
-        <!-- Two -->
-        <section id="two" class="wrapper style2">
-          <header>
-            <h2>SwiftSend Application</h2>
-            <p>User Interface</p>
-          </header>
-          <div class="content">
-            <div class="gallery">
-              <div>
-                <div class="image fit flush">
-                  <a href="images/HomePage.png"
-                    ><img
-                      src="images/HomePage.png"
-                      alt=""
-                      width="600"
-                      height="300"
-                  /></a>
-                </div>
-              </div>
-              <div>
-                <div class="image fit flush">
-                  <a href="images/AboutPage.png"
-                    ><img
-                      src="images/AboutPage.png"
-                      alt=""
-                      width="600"
-                      height="300"
-                  /></a>
-                </div>
-              </div>
-              <div>
-                <div class="image fit flush">
-                  <a href="images/SignupUser.png"
-                    ><img
-                      src="images/SignupUser.png"
-                      alt=""
-                      width="600"
-                      height="300"
-                  /></a>
-                </div>
-              </div>
-              <div>
-                <div class="image fit flush">
-                  <a href="images/ClientSignup.png"
-                    ><img
-                      src="images/ClientSignup.png"
-                      alt=""
-                      width="600"
-                      height="300"
-                  /></a>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
         <!-- Three -->
@@ -204,37 +147,32 @@
                 height="525"
               />
             </div>
-            <div
-              class="inner"
-              style="text-align: left; padding-top: 2rem; padding-bottom: 2rem"
-            >
+            <div class="inner" style="padding-top: 2rem; padding-bottom: 2rem">
               <h3>Our Architecture</h3>
-              <p>
-                <li>
-                  Automated Deployment: Jenkins for continuous integration and
-                  ArgoCD for continuous deployment, minimizing manual tasks.
-                </li>
-                <li>
-                  Infrastructure as Code: Terraform for consistent, scalable AWS
-                  infrastructure provisioning.
-                </li>
-                <li>
-                  Configuration Management: Ansible for automating service
-                  configurations across deployments.
-                </li>
-                <li>
-                  Code Quality & Security: SonarQube and Trivy for ongoing code
-                  quality checks and security analysis.
-                </li>
-                <li>
-                  Containerization & Orchestration: Docker and Kubernetes for
-                  efficient application deployment and scaling.
-                </li>
-                <li>
-                  Monitoring & Visualization: Prometheus for monitoring and
-                  Grafana for performance visualization.
-                </li>
-              </p>
+              <li>
+                Automated Deployment: Jenkins for continuous integration and
+                ArgoCD for continuous deployment, minimizing manual tasks.
+              </li>
+              <li>
+                Infrastructure as Code: Terraform for consistent, scalable AWS
+                infrastructure provisioning.
+              </li>
+              <li>
+                Configuration Management: Ansible for automating service
+                configurations across deployments.
+              </li>
+              <li>
+                Code Quality & Security: SonarQube and Trivy for ongoing code
+                quality checks and security analysis.
+              </li>
+              <li>
+                Containerization & Orchestration: Docker and Kubernetes for
+                efficient application deployment and scaling.
+              </li>
+              <li>
+                Monitoring & Visualization: Prometheus for monitoring and
+                Grafana for performance visualization.
+              </li>
             </div>
           </div>
           <div class="spotlight">
@@ -248,34 +186,30 @@
             </div>
             <div class="inner" style="padding-top: 2rem; padding-bottom: 2rem">
               <h3>AWS Services Used</h3>
-              <p>
-                Our SwiftSend CI/CD pipeline utilized key AWS services to create
-                a robust and scalable infrastructure:
-                <li>
-                  EC2 Instance: Hosted the Ansible server and managed essential
-                  infrastructure components.
-                </li>
-                <li>
-                  Amazon RDS: Provided a managed relational database in the
-                  cloud for scalable data management.
-                </li>
-                <li>
-                  AWS EKS: Managed and scaled containerized applications using
-                  Kubernetes.
-                </li>
-                <li>
-                  Amazon EFS: Offered scalable, elastic file storage for
-                  persistent data.
-                </li>
-                <li>
-                  AWS S3 and DynamoDB: Used for storing Terraform state files
-                  and ensuring consistent state locking.
-                </li>
-                <li>
-                  Amazon ECR: Managed and deployed Docker container images
-                  efficiently.
-                </li>
-              </p>
+              <li>
+                EC2 Instance: Hosted the Ansible server and managed essential
+                infrastructure components.
+              </li>
+              <li>
+                Amazon RDS: Provided a managed relational database in the cloud
+                for scalable data management.
+              </li>
+              <li>
+                AWS EKS: Managed and scaled containerized applications using
+                Kubernetes.
+              </li>
+              <li>
+                Amazon EFS: Offered scalable, elastic file storage for
+                persistent data.
+              </li>
+              <li>
+                AWS S3 and DynamoDB: Used for storing Terraform state files and
+                ensuring consistent state locking.
+              </li>
+              <li>
+                Amazon ECR: Managed and deployed Docker container images
+                efficiently.
+              </li>
             </div>
           </div>
           <div class="spotlight alt">
@@ -285,32 +219,164 @@
             <div class="inner">
               <h3>AWS Architecture</h3>
               <p>
-                SwiftSend was facing significant operational challenges,
-                including manual, error-prone deployment processes, scalability
-                issues, limited monitoring capabilities, and security
-                vulnerabilities. These problems led to frequent downtime,
-                delayed releases, and an overall inefficiency in the development
-                lifecycle.
+                Our AWS architecture is designed to support the SwiftSend CI/CD
+                pipeline with a focus on scalability and security. We used an
+                EC2 instance to host the Ansible server and another for Jenkins,
+                with both running on Ubuntu 20.04 LTS. The EKS cluster,
+                utilizing t3-medium instances, manages containerized
+                applications and integrates with Amazon EFS for persistent
+                storage. The setup operates within a VPC with public and private
+                subnets, secured by specific security groups, and includes an
+                Ingress Controller with an ALB for efficient traffic management.
+                Essential tools like Docker, Terraform, and Prometheus ensure a
+                streamlined and automated deployment environment.
               </p>
             </div>
           </div>
-          <div class="spotlight">
-            <div class="image flush">
-              <img src="images/eksarc.png" alt="" width="700" height="525" />
-            </div>
-            <div class="inner">
-              <h3>Our Solution</h3>
-              <p>
-                To overcome the challenges faced by SwiftSend, my team and I
-                implemented a robust CI/CD pipeline that automated and
-                streamlined the deployment processes. By incorporating
-                open-source DevOps tools like Jenkins, Terraform, Ansible,
-                SonarQube, Trivy, Docker, and Kubernetes, alongside AWS cloud
-                services, we developed a comprehensive solution. This
-                combination allowed us to automate code integration, testing,
-                security scanning, and deployment, ensuring a more efficient,
-                secure, and scalable infrastructure.
-              </p>
+        </section>
+        <!-- Four -->
+        <section id="one" class="wrapper style1">
+          <header class="special">
+            <h2>Achievements with Best Practices</h2>
+            <p>Production-Ready Approach</p>
+          </header>
+          <div class="content">
+            <li>
+              Provisioned complete AWS infrastructure (VPC, subnets, NAT
+              gateway, EC2 for Ansible, security groups, roles, private EKS
+              cluster, private RDS) using Terraform, adhering to the least
+              privilege principle.
+            </li>
+            <li>
+              Configured Jenkins to interact with the EKS cluster via AWS access
+              policies defined in Terraform.
+            </li>
+            <li>
+              Automated Jenkins installation on EKS by triggering the Ansible
+              server through AWS SSM.
+            </li>
+            <li>
+              Deployed Jenkins master as a StatefulSet on EKS using Ansible,
+              with persistent storage on EFS. Managed Terraform state globally
+              with S3 and implemented state locking with DynamoDB.
+            </li>
+            <li>
+              Configured EKS RBAC using the new AWS auth config and map for
+              access management, replacing traditional policy bindings.
+            </li>
+            <li>
+              Developed Jenkins jobs using a master-slave architecture with pod
+              templates for build, test, and deploy stages.
+            </li>
+          </div>
+        </section>
+        <!-- Five -->
+        <section id="one" class="wrapper style1">
+          <header class="special">
+            <h2>Challenges Faced</h2>
+            <p>And Overcoming Those</p>
+          </header>
+          <div class="content">
+            <ul>
+              <li>
+                <strong>Terraform State Management:</strong> Overcame state file
+                challenges by implementing DynamoDB for state locking and S3 for
+                storage.
+              </li>
+              <li>
+                <strong>EKS Cluster Creation:</strong> Faced difficulties with
+                EKS provisioning using Terraform scripts.
+              </li>
+              <li>
+                <strong>AWS EKS Auth Config:</strong> Configured the new AWS EKS
+                auth config and map, a complex process recently introduced.
+              </li>
+              <li>
+                <strong>Ansible on Private Subnet:</strong> Ran Ansible scripts
+                on a private subnet without open ports or SG rules, resolved
+                using AWS SSM.
+              </li>
+              <li>
+                <strong>Policy Identification:</strong> Ensured each resource
+                followed the least privilege principle, identifying appropriate
+                policies.
+              </li>
+              <li>
+                <strong>ArgoCD Pod Access:</strong> Gave ArgoCD pods the
+                necessary permission to communicate with EKS API.
+              </li>
+              <li>
+                <strong>Jenkins Job Development:</strong> Faced challenges
+                writing Jenkins jobs using agents and pod templates.
+              </li>
+              <li>
+                <strong>Kubectl Installation:</strong> Encountered permission
+                issues while installing kubectl in ArgoCD pods.
+              </li>
+              <li>
+                <strong>Terraform Management:</strong> Managed all
+                infrastructure through AWS Terraform scripts, ensuring
+                consistency and best practices.
+              </li>
+              <li>
+                <strong>Database Migration:</strong> Initially set up the
+                database on VMware and migrated it to AWS RDS.
+              </li>
+            </ul>
+          </div>
+        </section>
+        <!-- Two -->
+        <section id="two" class="wrapper style2">
+          <header>
+            <h2>SwiftSend Application</h2>
+            <p>User Interface</p>
+          </header>
+          <div class="content">
+            <div class="gallery">
+              <div>
+                <div class="image fit flush">
+                  <a href="images/HomePage.png"
+                    ><img
+                      src="images/HomePage.png"
+                      alt=""
+                      width="600"
+                      height="300"
+                  /></a>
+                </div>
+              </div>
+              <div>
+                <div class="image fit flush">
+                  <a href="images/AboutPage.png"
+                    ><img
+                      src="images/AboutPage.png"
+                      alt=""
+                      width="600"
+                      height="300"
+                  /></a>
+                </div>
+              </div>
+              <div>
+                <div class="image fit flush">
+                  <a href="images/SignupUser.png"
+                    ><img
+                      src="images/SignupUser.png"
+                      alt=""
+                      width="600"
+                      height="300"
+                  /></a>
+                </div>
+              </div>
+              <div>
+                <div class="image fit flush">
+                  <a href="images/ClientSignup.png"
+                    ><img
+                      src="images/ClientSignup.png"
+                      alt=""
+                      width="600"
+                      height="300"
+                  /></a>
+                </div>
+              </div>
             </div>
           </div>
         </section>
