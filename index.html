@@ -19,6 +19,22 @@
     #one .image img {
       height: 700px;
     }
+    .content .contributors-list {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-top: 5px;
+    }
+    .content .contributors-list li {
+      font-style: italic;
+      color: #555;
+    }
+    .content p {
+      margin-bottom: 0px;
+    }
+    .icons a {
+      color: rgba(0, 0, 0, 0.75);
+      font-size: 2rem;
+    }
   </style>
   <body>
     <!-- Header -->
@@ -380,8 +396,53 @@
             </div>
           </div>
         </section>
+        <section id="one" class="wrapper style1">
+          <header class="special" style="padding-bottom: 0%">
+            <h2>GitHub Repositories</h2>
+            <ul class="icons">
+              <a
+                href="https://github.com/Harikrishnan-HK"
+                class="icon fa-github"
+                ><span class="label">GitHub</span></a
+              >
+            </ul>
+          </header>
+          <div class="content" style="padding-top: 2rem">
+            <li>
+              <a
+                href="https://github.com/Rohan-tech11/TerraformScripts-SwiftSend/"
+                target="_blank"
+              >
+                SwiftSend Terraform Scripts
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/Harikrishnan-HK/swiftsend-jenkins-jobs"
+                target="_blank"
+              >
+                SwiftSend Jenkins Jobs
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/Harikrishnan-HK/Swiftsend-manifest"
+                target="_blank"
+              >
+                SwiftSend Manifest - for ArgoCD
+              </a>
+            </li>
+
+            <p>Contributors:</p>
+            <ul class="contributors-list">
+              <li>Harikrishnan Karuppiah</li>
+              <li>Rohan Mogarala</li>
+            </ul>
+          </div>
+        </section>
       </div>
     </section>
+
     <!-- Footer -->
     <footer id="footer">
       <div class="container">
